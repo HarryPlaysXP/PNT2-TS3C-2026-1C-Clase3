@@ -1,4 +1,5 @@
 console.log ("Missionbriefing")
+console.log ("-".repeat(100))
 console.log ("-Ejercicio 1 - `let` y `const`")
 console.log("a)");
 let a = 23;
@@ -38,3 +39,14 @@ function prueba() {
     console.log(c); // ?
 } 
 prueba();
+console.log ("-".repeat(100))
+console.log ("-Ejercicio 2 - Arrays")
+console.log("a)");
+const frutas = ["manzana", "banana", "pera", "naranja"];
+console.log(frutas);
+frutas.unshift("fresa");
+console.log(frutas);
+frutas.push("kiwi");
+console.log(frutas);
+console.log("b)");
+console.log("c)");
