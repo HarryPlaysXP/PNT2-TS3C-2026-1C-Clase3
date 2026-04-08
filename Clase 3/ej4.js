@@ -1,6 +1,6 @@
 console.log ("Guia de ejercicios ES6")
 console.log ("-".repeat(100))
-console.log ("-Ejercicio 4 - Objetos y sus propiedades")
+console.log ("-Ejercicio 4 - Template Literals")
 console.log ("A)")
 let nombre = "Juan";
 let edad = 25;
