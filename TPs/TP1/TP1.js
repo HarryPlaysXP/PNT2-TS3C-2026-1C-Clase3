@@ -39,3 +39,10 @@ console.log ("9)")
 console.log ( "Todos valen + 1k? : " + productos.every(producto => producto.precio > 1000))
 console.log ("10)")
 console.log ( "Array punto 4 incluye Campera? : " + nombres.includes("Campera"))
+console.log ("Parte 4:")
+console.log ("11)")
+const ordenados = productos.sort((a, b) => a.precio - b.precio);
+console.log (ordenados)
+console.log ("12)")
+const mensajePersonalizado = productos.map(producto => `El producto ${producto.nombre} cuesta $${producto.precio} y pertenece a la categoría ${producto.categoria}.`);
+console.log (mensajePersonalizado);
