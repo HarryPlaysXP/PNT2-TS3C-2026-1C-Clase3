@@ -20,3 +20,10 @@ console.log ("3)")
 productos.forEach(producto => {
     console.log (`ID: ${producto.id}, Nombre: ${producto.nombre}, Precio: ${producto.precio}`)
 })
+console.log ("Parte 2: Métodos de transformación y filtrado")
+console.log ("4)")
+const nombres = productos.map(producto => producto.nombre);
+console.log (nombres)
+console.log ("5)")
+const ropa = productos.filter(producto => producto.categoria === "Ropa");
+console.log (ropa)
