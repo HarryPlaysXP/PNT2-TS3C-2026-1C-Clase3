@@ -30,3 +30,8 @@ console.log (ropa)
 console.log ("6)")
 const mayor3000 = productos.filter(producto => producto.precio > 3000);
 console.log (mayor3000)
+console.log ("7)")
+console.log(productos.find(producto => producto.nombre === "Gorra"))
+console.log ("Parte 3: Métodos de validación")
+console.log ("8)")
+console.log ( "Prodcuto + 10k? : " + productos.some(producto => producto.precio > 10000))
