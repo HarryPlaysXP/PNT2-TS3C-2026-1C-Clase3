@@ -46,3 +46,13 @@ console.log (ordenados)
 console.log ("12)")
 const mensajePersonalizado = productos.map(producto => `El producto ${producto.nombre} cuesta $${producto.precio} y pertenece a la categoría ${producto.categoria}.`);
 console.log (mensajePersonalizado);
+console.log ("13)")
+const productosNuevos = [
+{ id: 6, nombre: "Zapato", precio: 11500, categoria: "Calzado" },
+{ id: 7, nombre: "Jean", precio: 4500, categoria: "Ropa" },
+{ id: 8, nombre: "Chanclas", precio: 2000, categoria: "Calzado" },
+{ id: 9, nombre: "Bufanda", precio: 1200, categoria: "Accesorios" },
+{ id: 10, nombre: "Sombrilla", precio: 500, categoria: "Accesorios" }
+];
+const productosCombinados = [...productos, ...productosNuevos];
+console.log (productosCombinados)
