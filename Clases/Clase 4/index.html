@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Axios con JSONPlaceholder</title>
+</head>
+
+<body>
+
+  <h1>Lista de Posts</h1>
+  <button id="btnCargar">Cargar Posts</button>
+
+  <ul id="lista"></ul>
+
+  <!-- Axios CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <script>
+    const btn = document.getElementById("btnCargar");
+    const lista = document.getElementById("lista");
+
+    btn.addEventListener("click", () => {
+      axios.get("https://jsonplaceholder.typicode.com/posts")
+        .then(response => {
+          const posts = response.data;
+
+          lista.innerHTML = ""; // limpio lista
+
+          posts.slice(0, 5).forEach(post => {
+            const li = document.createElement("li");
+            li.textContent = post.title;
+            lista.appendChild(li);
+          });
+        })
+        .catch(error => {
+          console.error("Error:", error);
+        });
+    });
+  </script>
+
+</body>
+
+</html>
